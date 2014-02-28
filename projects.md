@@ -20,7 +20,18 @@ image:
 </div>
 </section><!-- /#table-of-contents -->
 
-General notes and suggestions for customizing Minimal Mistakes.
+A list of projects, in varying stages of development.
+
+## [MiniPlay](https://chrome.google.com/webstore/detail/miniplay/dfddfiedihbijfeacjamchlliogmjjnd)
+
+A Chrome extension to control Google Play Music.
+
+![MiniPlay Screenshot]({{ site.url }}/images/miniplay.png)
+
+* Popup controls themed to match Play Music
+* Chrome-wide keyboard shortcuts
+* Last.fm scrobbling
+* [Open source](https://github.com/iambald/MiniPlay)
 
 ## Basic Setup for a new Jekyll site
 
