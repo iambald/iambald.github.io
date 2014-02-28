@@ -1,16 +1,31 @@
+html {
+	height: 100%;
+}
+
 body {
 	background-color: @bodycolor;
 	font-family: @base-font;
 	font-color: @textcolor;
+	height: 100%;
 }
 .navigation-wrapper {
 	.container();
-	padding: 2em 0 0;
+	padding: 0 0 1em 0;
 	font-family: @heading-font;
 	font-weight: 700;
 	text-transform: uppercase;
 	.clearfix();
 }
+
+.top-spacing {
+	.container();
+	padding: 0;
+	font-family: @heading-font;
+	font-weight: 700;
+	text-transform: uppercase;
+	.clearfix();
+}
+
 .site-name {
 	.grid(12,10);
 	.prefix(12,1);
@@ -41,9 +56,11 @@ body {
 		.grid(12,9);
 		.prefix(12,0);
 		.suffix(12,0);
+		display: none;
 	}
 	@media @1382px {
 		.grid(12,8);
+		display: none;
 	}
 	ul {
 		margin: 0;
@@ -229,6 +246,7 @@ body {
 	.prefix(12,1);
 	.suffix(12,1);
 	margin-bottom: 2em;
+	margin-top: 2em;
 	@media @600px {
 		.grid(12,6);
 		.prefix(12,0);
@@ -237,11 +255,12 @@ body {
 	@media @1382px {
 		.grid(12,4.5);
 	}
-	h3 {
+	h1 {
 		margin: 0;
 		padding-bottom: .5em;
-		.font-rem(28);
-		border-bottom: 1px solid lighten(@black,70);
+		.font-rem(40);
+		font-weight: 700;
+		text-transform: uppercase;
 	}
 	article {
 		h2 {
@@ -315,8 +334,8 @@ body {
 		border-bottom: 0 solid transparent;
 	}
 	img.bio-photo {
-		width: 100px;
-		height: 100px;
+		width: 80px;
+		height: 80px;
 		.rounded(100px);
 	}
 }
@@ -337,6 +356,9 @@ body {
 }
 .article-author-side {
 	display: none;
+	padding-top: 2em;
+	border-right: 1px solid lighten(@black,70);
+	padding-right: 1%;
 	@media @600px {
 		display: block;
 		.grid(12,2);
@@ -360,6 +382,9 @@ body {
 		.author-social {
 			margin-bottom: 5px;
 		}
+		height: 100%;
+		margin-right: 2%;
+		margin-left: 1%;
 	}
 	@media @992px {
 		h3,
@@ -372,10 +397,14 @@ body {
 			margin-left: 25px;
 			margin-right: 25px;
 		}
+		margin-right: 2%;
+		margin-left: 1%;
 	}
 	@media @1382px {
 		.grid(12,1.5);
 		.prefix(12,2);
+		margin-right: 2%;
+		margin-left: 1%;
 	}
 }
 .article-author-bottom {
