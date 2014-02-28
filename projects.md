@@ -1,9 +1,9 @@
 ---
 layout: page
-permalink: /theme-setup/
-title: Theme Setup
+permalink: /projects/
+title: Projects
 description: "Instructions on how to install and customize the Jekyll theme Minimal Mistakes."
-tags: [Jekyll, theme, responsive]
+tags: [projects]
 image:
   feature: texture-feature-02.jpg
   credit: Texture Lovers
