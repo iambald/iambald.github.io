@@ -26,7 +26,7 @@ A list of projects, in varying stages of development.
 
 A Chrome extension to control Google Play Music.
 
-![MiniPlay Screenshot]({{ site.url }}/images/miniplay.png)
+![MiniPlay Screenshot]({{ site.url }}/images/miniplay.jpg)
 
 * Popup controls themed to match Play Music
 * Chrome-wide keyboard shortcuts
