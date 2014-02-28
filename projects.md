@@ -25,8 +25,8 @@ A list of stuff I've made, in varying stages of development.
 ## MiniPlay
 
 <figure>
-  <a href="https://chrome.google.com/webstore/detail/miniplay/dfddfiedihbijfeacjamchlliogmjjnd"><img src="{{ site.url }}/images/miniplay.jpg"></a>
-  <figcaption><a href="https://chrome.google.com/webstore/detail/miniplay/dfddfiedihbijfeacjamchlliogmjjnd" title="MiniPlay">A Chrome extension to control Google Play Music</a>.</figcaption>
+  <a href="https://chrome.google.com/webstore/detail/miniplay/dfddfiedihbijfeacjamchlliogmjjnd" target="_blank"><img src="{{ site.url }}/images/miniplay.jpg"></a>
+  <figcaption><a href="https://chrome.google.com/webstore/detail/miniplay/dfddfiedihbijfeacjamchlliogmjjnd" target="_blank" title="MiniPlay">A Chrome extension to control Google Play Music</a>.</figcaption>
 </figure>
 
 * Popup controls themed to match Play Music
