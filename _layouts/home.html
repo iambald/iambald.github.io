@@ -18,7 +18,7 @@
 </div>
 
 <div id="index">
-  <h1><a href="{{ site.url}}/">Site Title</a></h1>
+  <h1><a href="{{ site.url }}/">{{ site.title }}</a></h1>
   {% for post in site.posts limit:5 %}    
   <article>
     <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>

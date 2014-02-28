@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /about/
-title: 
+title: About
 tagline: When I breathe, I bend the air.
 tags: [about]
 modified: 2-28-2014
