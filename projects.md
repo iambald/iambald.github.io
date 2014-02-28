@@ -74,15 +74,4 @@ Software for an autonomous submarine, [Barracuda](http://avbotz.com). Notable fe
 * PID controller and Kalman filter to integrate IMU data
 * Leak detection
 
----
-
-## Chroma
-
----
-
-## MiM
-
----
-
-## MintyFox
 
