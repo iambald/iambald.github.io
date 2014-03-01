@@ -22,6 +22,8 @@ image:
 
 A list of stuff I've made, in varying stages of development.
 
+---
+
 ## MiniPlay
 
 <figure>
