@@ -359,6 +359,21 @@ body {
   .font-rem(14);
 
 }
+
+.thumb {
+	color: lighten(@link-color, 20); 
+	a { 
+		text-decoration: none;
+		color: lighten(@link-color, 20); 
+		a:visited { 
+			color: lighten(@link-color, 20); 
+		}
+		a:hover { 
+			color: darken(@link-color, 20); 
+		}
+	}
+}
+
 .article-author-side {
 	display: none;
 	padding-top: 2em;
