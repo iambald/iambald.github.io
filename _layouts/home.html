@@ -21,8 +21,8 @@
   <h1><a href="{{ site.url }}/">{{ site.title }}</a></h1>
   {% for post in site.posts limit:5 %}    
   <article>
-    <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-    <p>{% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 120 }}{% endif %}</p>
+    <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a><small> ⋅ {{ post.date | date: '%B %d, %Y' }}</small></h2>
+    <p>{% if post.description %}{{ post.description }}{% else %}{{ post.content | truncate: 800 }}{% endif %}</p>
   </article>
   {% endfor %}
 
