@@ -23,14 +23,14 @@ Here's what our interface looks like:
 {% highlight c++ linenos %}
 class pool {
  public:
-  pool();
-  ~pool();
+    pool();
+    ~pool();
 
-  add_task();
-  join();
-  wait();
-  pause();
-  unpause();
+    add_task();
+    join();
+    wait();
+    pause();
+    unpause();
 }
 
 {% endhighlight %}

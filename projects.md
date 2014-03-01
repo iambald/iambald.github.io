@@ -44,12 +44,12 @@ A list of stuff I've made, in varying stages of development.
 A modern threadpool built in modern C++11 to bridge the gap between `std::async` (not enough control) and `std::thread` (too fragile).
 
 {% highlight c++ linenos %}
-  threadpool::pool();
-  for (auto&& task : tasks) {
+threadpool::pool();
+for (auto&& task : tasks) {
     pool.add_task(task);
-  }
+}
 
-  pool.wait();
+pool.wait();
 {% endhighlight %}
 
 * Low overhead - no master thread
