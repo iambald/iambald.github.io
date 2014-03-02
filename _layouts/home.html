@@ -22,7 +22,7 @@
   {% for post in site.posts limit:5 %}    
   <article>
     <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a><small> ⋅ {{ post.date | date: '%B %d, %Y' }}</small></h2>
-    <p>{% if post.description %}{{ post.description }}{% else %}{{ post.excerpt }}{% endif %}</p>
+    <p>{% if post.description %}{{ post.description }}{% else %}{{ post.excerpt }}{% endif %} <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">Read more...</a></p>
   </article>
   {% endfor %}
 
