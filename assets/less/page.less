@@ -18,7 +18,7 @@ body {
 }
 
 #footer {
-	bottom: 0;
+	bottom: 3em;
 	position: absolute;
 	font-size: 10pt;
 }
@@ -223,6 +223,7 @@ body {
 			.suffix(12,0);
 			padding-left: 2em;
 			border-left: 1px solid lighten(@black, 70);
+			margin-left: 11em;
 		}
 
 		h1 {
@@ -251,6 +252,7 @@ body {
 		.suffix(12,0);
 		padding-left: 2em;
 		border-left: 1px solid lighten(@black, 70);
+		margin-left: 11em;
 	}
 
 	h1 {
@@ -372,9 +374,6 @@ body {
 	padding-top: 2em;
 	@media @600px {
 		display: block;
-		.grid(12,2);
-		.prefix(12,0.5);
-		.suffix(12,0.5);
 		h3,
 		.bio-photo,
 		p,
@@ -397,6 +396,7 @@ body {
 		margin-right: 2em;
 		margin-left: 2em;
 		width: 7em;
+		position: fixed;
 	}
 	@media @992px {
 		h3,
@@ -409,6 +409,7 @@ body {
 		margin-right: 2em;
 		margin-left: 2em;
 		width: 7em;
+		position: fixed;
 	}
 
 }
