@@ -5,10 +5,6 @@ title: About
 tagline: When I breathe, I bend the air.
 tags: [about]
 modified: 2-28-2014
-image:
-  feature: texture-feature-02.jpg
-  credit: Texture Lovers
-  creditlink: http://texturelovers.com
 ---
 
 > When I was thirteen, I had my first love. -- Justin Bieber, 2010

@@ -11,25 +11,25 @@ owner:
   email:          jeffrey@cmu.edu
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
   twitter:        iambald
-  facebook:       
+  facebook:
   github:         iambald
-  stackoverflow: 
+  stackoverflow:
   linkedin:       198514097
-  instagram:      
-  lastfm:         
-  tumblr:         
-  pinterest:      
-  foursquare:     
-  steam:          
-  dribbble: 
+  instagram:
+  lastfm:
+  tumblr:
+  pinterest:
+  foursquare:
+  steam:
+  dribbble:
   # For Google Authorship https://plus.google.com/authorship
   google_plus:
 
 # Analytics and webmaster tools stuff goes here
 google_analytics:   UA-48561112-1
-google_verify:      
+google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:        
+bing_verify:
 
 # Links to include in top navigation
 # For external links add external: true
@@ -60,7 +60,7 @@ kramdown:
   use_coderay: false
 
   coderay:
-    coderay_line_numbers: 
+    coderay_line_numbers:
     coderay_line_numbers_start: 1
     coderay_tab_width: 4
     coderay_bold_every: 10
