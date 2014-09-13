@@ -63,22 +63,8 @@ code {
 #header h1 {
   text-align: right;
   font-size: 36pt;
-  @media (min-width: 768px) {
-    font-size: 48pt;
-  }
 }
-@media (min-width: 992px) {
-  #content-left {
-    border-right: 1px solid #aaaaaa;
-  }
-  #contact,
-  #programming,
-  #web,
-  #other,
-  #activities {
-    padding-left: 1em;
-  }
-}
+
 a[href]:after {
   content: none !important;
 }
@@ -96,6 +82,16 @@ a[href]:after {
     column-count: 1!important;
     -webkit-column-count: 1!important;
     -moz-column-count: 1!important;
+  }
+  #content-left {
+    border-right: 1px solid #aaaaaa;
+  }
+  #contact,
+  #programming,
+  #web,
+  #other,
+  #activities {
+    padding-left: 1em;
   }
 }
 code {
@@ -120,5 +116,9 @@ code {
     margin-top: 3em;
     margin-bottom: 3em;
     box-shadow: 0 0 1.7em rgba(0, 0, 0, 0.5);
+  }
+  #header h1 {
+    text-align: right;
+    font-size: 48pt;
   }
 }
