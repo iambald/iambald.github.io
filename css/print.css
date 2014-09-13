@@ -58,25 +58,14 @@ code {
 #content-left {
   border-right: 1px solid #aaaaaa;
 }
-#contact,
-#programming,
-#web,
-#other,
-#activities {
-  padding-left: 1em;
-}
 a[href]:after {
   content: none !important;
 }
 #sidebar ul {
   list-style-type: none;
-  margin: 0 0 0 -15px;
+  margin: 0;
   padding: 0;
 }
-#contact ul {
-  margin: 0;
-}
-
 .container {
   width: 960px;
   min-width: 960px;

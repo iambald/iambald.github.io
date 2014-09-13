@@ -13,6 +13,7 @@ h3 {
 strong {
   font-family: "Open Sans Condensed", sans-serif;
 }
+
 h2 {
   font-size: 18pt;
   padding-bottom: 0.2em;
@@ -50,12 +51,7 @@ code {
 #projects {
   padding-bottom: 1em;
 }
-@media (max-width: 992px) {
-  #contact ul {
-    column-count: 2!important;
-    -webkit-column-count: 2!important;
-    -moz-column-count: 2!important;
-  }
+@media (max-width: 992px){
   #projects {
     border-bottom: 1px solid #aaaaaa;
   }
@@ -63,6 +59,15 @@ code {
     border-bottom: none;
   }
 }
+
+@media (max-width: 992px) and (min-width: 768px) {
+  #contact ul {
+    column-count: 2!important;
+    -webkit-column-count: 2!important;
+    -moz-column-count: 2!important;
+  }
+}
+
 #content {
   border-bottom: 1px solid #aaaaaa;
 }
@@ -84,29 +89,19 @@ a[href]:after {
 }
 #sidebar ul {
   list-style-type: none;
-  margin: 0 0 0 -15px;
-  padding: 0;
-}
-
-#contact ul {
   margin: 0;
+  padding: 0;
 }
 
 @media screen and (min-width: 992px) {
   #content-left {
     border-right: 1px solid #aaaaaa;
   }
-  #contact,
-  #programming,
-  #web,
-  #other,
-  #activities {
-    padding-left: 1em;
-  }
 }
 #page {
   padding: 0em 5em 5em 5em;
   background-color: #fff;
+  max-width: 960px;
 }
 @media screen and (min-width: 768px) {
   #page {
