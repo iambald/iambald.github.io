@@ -36,18 +36,8 @@ code {
   padding-bottom: 1em;
   border-bottom: 1px solid #aaaaaa;
 }
-@media (max-width: 992px) {
-  #other {
-    border-bottom: none;
-  }
-}
 #projects {
   padding-bottom: 1em;
-}
-@media (max-width: 992px) {
-  #projects {
-    border-bottom: 1px solid #aaaaaa;
-  }
 }
 #content {
   border-bottom: 1px solid #aaaaaa;
@@ -64,17 +54,15 @@ code {
   text-align: right;
   font-size: 48pt;
 }
-@media (min-width: 992px) {
-  #content-left {
-    border-right: 1px solid #aaaaaa;
-  }
-  #contact,
-  #programming,
-  #web,
-  #other,
-  #activities {
-    padding-left: 1em;
-  }
+#content-left {
+  border-right: 1px solid #aaaaaa;
+}
+#contact,
+#programming,
+#web,
+#other,
+#activities {
+  padding-left: 1em;
 }
 a[href]:after {
   content: none !important;
@@ -90,7 +78,7 @@ a[href]:after {
 code {
   background-color: #fff;
 }
-.container-non-responsive {
+.container {
   /* Margin/padding copied from Bootstrap */
   margin-left: auto;
   margin-right: auto;
@@ -98,16 +86,9 @@ code {
   padding-right: 15px;
   /* Set width to your desired site width */
   width: 960px;
+  min-width: 960px;
 }
 #page {
-  padding: 0em 5em 5em 5em;
+  padding: 0em 5em;
   background-color: #fff;
-}
-@media screen and (min-width: 768px) {
-  #page {
-    padding: 5em;
-    margin-top: 3em;
-    margin-bottom: 3em;
-    box-shadow: 0 0 1.7em rgba(0, 0, 0, 0.5);
-  }
 }
