@@ -13,6 +13,7 @@
 
 <div id="index">
   <h1><a href="{{ site.url }}/">{{ site.owner.name }}</a></h1>
+  <div id="social">
   {% if site.owner.twitter %}<a href="http://twitter.com/{{ site.owner.twitter }}" class="thumb" target="_blank"><i class="icon-twitter"></i></a>{% endif %}
 {% if site.owner.facebook %}<a href="http://facebook.com/{{ site.owner.facebook }}" class="thumb" target="_blank"><i class="icon-facebook"></i></a>{% endif %}
 {% if site.owner.google_plus %}<a href="{{ site.owner.google_plus }}" class="thumb" target="_blank"><i class="icon-google-plus"></i></a>{% endif %}
@@ -26,6 +27,7 @@
 {% if site.owner.pinterest %}<a href="http://www.pinterest.com/{{ site.owner.pinterest }}" class="thumb" target="_blank"><i class="icon-pinterest"></i></a>{% endif %}
 {% if site.owner.foursquare %}<a href="http://foursquare.com/{{ site.owner.foursquare }}" class="thumb" target="_blank"><i class="icon-foursquare"></i></a>{% endif %}
 {% if site.owner.steam %}<a href="http://steamcommunity.com/id/{{ site.owner.steam }}" class="thumb" target="_blank"><i class="icon-steam"></i></a>{% endif %}
+</div>
 </div><!-- /#index -->
 
 {% include _scripts.html %}
