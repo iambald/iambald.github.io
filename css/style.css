@@ -62,7 +62,10 @@ code {
 }
 #header h1 {
   text-align: right;
-  font-size: 48pt;
+  font-size: 36pt;
+  @media (min-width: 768px) {
+    font-size: 48pt;
+  }
 }
 @media (min-width: 992px) {
   #content-left {
