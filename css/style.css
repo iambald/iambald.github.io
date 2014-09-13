@@ -87,6 +87,14 @@ a[href]:after {
   -webkit-columns: 2;
   -moz-columns: 2;
 }
+
+@media screen and (min-width: 992px) {
+  #contact ul {
+    columns: 1!important;
+    -webkit-columns: 1!important;
+    -moz-columns: 1!important;
+  }
+}
 code {
   background-color: #fff;
 }
