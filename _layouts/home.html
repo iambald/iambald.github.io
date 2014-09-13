@@ -13,7 +13,9 @@
 
 <div id="index">
   <h1><a href="{{ site.url }}/">{{ site.owner.name }}</a></h1>
-
+            {% for link in site.links %}
+<a href="{% if link.external %}{{ link.url }}{% else %}{{ site.url }}{{ link.url }}{% endif %}" class="author-social" {% if link.external %}target="_blank"{% endif %}>{{ link.title }}</a>
+          {% endfor %}
 </div><!-- /#index -->
 
 {% include _scripts.html %}
