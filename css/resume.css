@@ -12,7 +12,6 @@ h3 {
 }
 
 h1, h2, h3, h4, strong, .fa,a {
-  /*color: #2c3e50;*/
   color: black;
 }
 
@@ -53,6 +52,7 @@ a, a:hover, a:focus {
 code {
   color: black;
   background-color: #fff;
+  padding: 0;
 }
 #contact,
 #programming,
@@ -86,6 +86,9 @@ a[href]:after {
 }
 #page {
   background-color: #fff
+}
+.project {
+  margin-top: 5px;
 }
 
 @media print, (min-width: 992px) {
