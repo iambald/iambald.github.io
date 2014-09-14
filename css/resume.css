@@ -20,13 +20,10 @@ h4 {
   margin-bottom: 5px;
   font-weight: 400;
   text-transform: uppercase;
-  /*font-style: italic;*/
   font-size: 11pt;
   line-height: 1.42857143;
-  /*color: #3498db;*/
 }
 strong {
-  /*font-style: italic;*/
   font-weight: 400;
 }
 
@@ -101,12 +98,10 @@ a[href]:after {
 }
 
 @media print {
-  .container {
-    width: 960px;
-    min-width: 960px;
-  }
   #page {
     padding: 0em 5em;
+    width: 960px;
+    min-width: 960px;
   }
 }
 
