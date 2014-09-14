@@ -64,6 +64,10 @@ code {
   padding-bottom: 1em;
 }
 
+#chroma {
+  margin-bottom: 10px;
+}
+
 .line, #content, #header {
   border-bottom: 1px solid #aaaaaa;
 }
