@@ -10,6 +10,20 @@ h3 {
   font-weight: 700;
   text-transform: uppercase;
 }
+
+h1, h2, h3, h4, strong, .fa,a {
+  /*color: #2c3e50;*/
+  color: black;
+}
+
+h4 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 12pt;
+  line-height: 1.42857143;
+}
 strong {
   font-family: "Open Sans Condensed", sans-serif;
 }
@@ -27,16 +41,13 @@ h3 {
   font-size: 14pt;
 }
 a {
-  color: black;
   -o-transition:.5s;
   -ms-transition:.5s;
   -moz-transition:.5s;
   -webkit-transition:.5s;
-  /* ...and now for the proper property */
   transition:.5s;
-  text-decoration: none;
 }
-a:hover, a:focus {
+a, a:hover, a:focus {
   text-decoration: none;
 }
 code {
