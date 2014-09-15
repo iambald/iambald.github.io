@@ -107,10 +107,6 @@ a[href]:after {
     width: 960px;
     min-width: 960px;
   }
-
-  #sidebar a {
-    color: #333;
-  }
 }
 
 @media screen {
