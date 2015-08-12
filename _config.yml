@@ -1,0 +1,25 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:               Jeff Chen
+tagline:             'Coder and athlete'
+description:         'placeholder description about me...'
+url:                 http://jeff.yt
+baseurl:             ''
+paginate:            5
+
+author:
+  name:              Jeff Chen
+  url:               http://jeff.yt
+  email:             jeffrey@cmu.edu
+
+# Custom vars
+version:          1.0.0
+
+github:
+  repo:           https://github.com/iambald/iambald.github.io
