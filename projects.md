@@ -8,7 +8,7 @@ title: Projects
 
 [![MiniPlay]({{site.url}}/assets/miniplay.png)](https://chrome.google.com/webstore/detail/miniplay/dfddfiedihbijfeacjamchlliogmjjnd)
 
-MiniPlay is a Chrome extension that adds a miniplayer popup and global keyboard shortcuts to various streaming music players. It also (optionally) provides Last.fm scrobbling and rich notifications. 
+MiniPlay is a Chrome extension that adds a miniplayer popup and global keyboard shortcuts to popular streaming music players like Spotify and Google Play Music. It also (optionally) provides Last.fm scrobbling and rich notifications. 
 
 ## [espresso](https://jczhang.github.io/espresso)
 
