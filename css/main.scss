@@ -1,0 +1,227 @@
+---
+---
+
+$break-sm: 48em;
+$break-md: 64em;
+$break-lg: 75em;
+
+$sidebar-width: 30%;
+
+$header-color: #046380;
+$link-color: #b9121b;
+
+// Reset margins and padding to do it manually
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Standard font-size for em measuring
+body {
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #222;
+}
+
+h1 {
+    font-size: 1.7em;
+}
+
+h2 {
+    font-size: 1.4em;
+    font-weight: normal;
+}
+
+p {
+    font-weight: 300;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.alignright {
+    float: right;
+}
+
+a {
+    transition: color 0.2s ease,
+                border-color 0.2s ease-in-out,
+                background-color 0.2s ease;
+    color: $header-color;
+}
+
+a:hover {
+    color: $link-color!important;
+}
+
+#header {
+    position: relative;
+    text-align: center;
+    color: white;
+
+    background-color: $header-color;
+
+    nav {
+        display: none;
+    }
+
+    header {
+        padding: 4em 2em;
+        .avatar {
+            border-radius: 100%;
+            width: 8em;
+            margin-bottom: 1em;
+        }
+
+        h2 {
+            padding-bottom: 0.5em;
+        }
+
+        h3 {
+            font-weight: normal;
+            font-size: 1em;
+            font-style: italic;
+        }
+    }
+
+    @media (min-width: $break-md) {
+        position: fixed;
+        width: $sidebar-width;
+        height: 100%;
+        // text-align: right;
+
+        header {
+            padding: 3em 3em 3em 3em;
+        }
+
+        nav {
+            display: block;
+            ul {
+                list-style: none;
+                li {
+                    a {
+                        color: rgba(255, 255, 255, 0.8);
+                        width: 100%;
+                        display: block;
+                        background-clip: padding-box;
+                        padding: 0.5em 3em;
+                    }
+                    a:hover, a.active {
+                        background-color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+
+    h1 {
+        padding: 1em 0;
+        font-weight: normal;
+    }
+
+    h2 {
+        padding: 0.3em 0;
+        font-size: 1.3em;
+
+        a {
+            font-weight: normal;
+        }
+    }
+
+    a {
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    p {
+        padding-bottom: 1em;
+    }
+
+    #hero {
+        display: none;
+    }
+
+    article {
+        border-bottom: 1px solid #cfcfcf;
+        padding-bottom: 1em;
+        margin: 2em 1em 0 1em;
+        line-height: 1.4;
+
+        .project-img {
+            width: 100%;
+            margin: 1em 0;
+            border: 3px solid black;
+            box-sizing: content-box;
+        }
+    }
+
+    article:last-child {
+        border-bottom: none;
+    }
+
+    @media (min-width: $break-md) {
+        margin-left: $sidebar-width;
+        width: calc(100% - #{$sidebar-width});
+        padding-bottom: 4em;
+        article {
+            margin: 1em 4em 0 4em;
+        }
+
+        #hero {
+            background: url('../assets/hero.jpg') no-repeat center center;
+            background-size: cover;
+            width: 100%;
+            height: 12em;
+            display: block;
+            position: relative;
+        }
+    }
+}
+
+footer {
+    position: relative;
+    text-align: center;
+
+    padding: 3em 0;
+
+    background: url('../assets/hero.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    display: block;
+
+    ul.icons {
+        list-style: none;
+
+        li {
+            display: inline-block;
+            a {
+                color: rgba(255, 255, 255, 0.8);
+                text-decoration: none;
+            }
+            padding: 0 0.5em 0 0;
+        }
+
+        li:last-child {
+            padding-right: 0;
+        }
+
+        font-size: 1.75em;
+    }
+
+    @media (min-width: $break-md) {
+        width: $sidebar-width;
+
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        padding: 0 3em 2em 3em;
+        // text-align: right;
+
+        background: none;
+    }
+}

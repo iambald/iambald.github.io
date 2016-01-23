@@ -10,8 +10,8 @@ permalink:        pretty
 
 # Setup
 title:               Jeff Chen
-tagline:             'Coder and athlete'
-description:         'placeholder description about me...'
+tagline:             'Jeff Chen'
+description:         "TODO: witty and intelligent tagline"
 url:                 ''
 baseurl:             ''
 paginate:            5
@@ -25,4 +25,6 @@ author:
 version:          1.0.0
 
 github:
-  repo:           https://github.com/iambald/iambald.github.io
+  repo:           https://github.com/jchen1/jchen1.github.io
+
+categories: [project, main]

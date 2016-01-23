@@ -5,30 +5,33 @@
 
   <body>
 
-    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
-         content to avoid any CSS collisions with our real content. -->
-    <div class="wrap">
-      <div class="masthead">
-        <div class="container">
-          <h3 class="masthead-title">
-            <a href="/" title="Home">{{ site.title }}</a>
-            <small>{{ site.tagline }}</small>
-          </h3>
-          <ul class="nav">
-            <li>
-              <a href="/projects">Projects</a>
-            </li>
-            <li>
-              <a href="/about">About</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+    <section id='header'>
+      <header>
+        <a href='#hero'><img class='avatar' src='assets/avatar.jpg'></a>
+        <h2><strong>{{site.title}}</strong></h2>
+        <h3>{{site.description}}</h3>
+      </header>
+      <nav>
+        <ul>
+          <li><a href='#about'>About</a></li>
+          <li><a href='#projects'>Projects</a></li>
+        </ul>
+      </nav>
+    </section>
 
-      <div class="container content">
-        {{ content }}
-      </div>
-    </div>
+
+    <main>
+      <div id='hero'></div>
+      <article id='about'>
+        {% include about.html %}
+      </article>
+      <article id='projects'>
+        {% include projects.html %}
+      </article>
+
+    </main>
+
+    {% include footer.html %}
 
   </body>
 </html>
