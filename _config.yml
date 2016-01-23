@@ -1,0 +1,30 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+redcarpet:
+  extensions: ['smart']
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:               Jeff Chen
+tagline:             'Jeff Chen'
+description:         "TODO: witty and intelligent tagline"
+url:                 ''
+baseurl:             ''
+paginate:            5
+
+author:
+  name:              Jeff Chen
+  url:               http://jeff.yt
+  email:             jeffrey@cmu.edu
+
+# Custom vars
+version:          1.0.0
+
+github:
+  repo:           https://github.com/jchen1/jchen1.github.io
+
+categories: [project, main]
