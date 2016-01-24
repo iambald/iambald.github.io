@@ -8,7 +8,8 @@ $break-lg: 75em;
 $sidebar-width: 30%;
 
 $header-color: #046380;
-$link-color: #b9121b;
+// $link-color: #b9121b;
+$link-color: #f21823;
 
 // Reset margins and padding to do it manually
 * {
@@ -22,6 +23,7 @@ body {
     font-size: 13pt;
     font-family: 'Source Sans Pro', sans-serif;
     color: #222;
+    background-color: #f5f5f5;
 }
 
 h1 {
@@ -59,9 +61,10 @@ a:hover {
 #header {
     position: relative;
     text-align: center;
-    color: white;
+    color: rgba(255, 255, 255, 0.8);
 
-    background-color: $header-color;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/hero.jpg') no-repeat center center;
+    background-size: cover;
 
     nav {
         display: none;
@@ -97,6 +100,8 @@ a:hover {
         }
 
         nav {
+            text-align: right;
+            font-size: 15pt;
             display: block;
             ul {
                 list-style: none;
@@ -107,9 +112,10 @@ a:hover {
                         display: block;
                         background-clip: padding-box;
                         padding: 0.5em 3em;
+                        text-decoration: none;
                     }
                     a:hover, a.active {
-                        background-color: white;
+                        background-color: rgba(255, 255, 255, 0.9);
                     }
                 }
             }
@@ -118,6 +124,8 @@ a:hover {
 }
 
 main {
+
+    max-width: 40em;
 
     h1 {
         padding: 1em 0;
@@ -154,10 +162,23 @@ main {
 
         .project-img {
             width: 100%;
-            margin: 1em 0;
-            border: 3px solid black;
+            margin: 1.5em 0;
+            border: 3px solid #000;
+            border-radius: 5px;
             box-sizing: content-box;
         }
+
+        .project {
+            border-top: 1px solid #cfcfcf;
+        }
+
+        .project:first-of-type {
+            border-top: none;
+        }
+    }
+
+    article:first-child {
+        margin-top: 0;
     }
 
     article:last-child {
@@ -189,7 +210,7 @@ footer {
 
     padding: 3em 0;
 
-    background: url('../assets/hero.jpg') no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/hero.jpg') no-repeat center center;
     background-size: cover;
     width: 100%;
     display: block;
@@ -200,7 +221,8 @@ footer {
         li {
             display: inline-block;
             a {
-                color: rgba(255, 255, 255, 0.8);
+                color: white;
+                opacity: 0.8;
                 text-decoration: none;
             }
             padding: 0 0.5em 0 0;
