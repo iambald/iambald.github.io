@@ -1,93 +1,31 @@
 <h1>Projects</h1>
 
 <div class='projects-container'>
-    <section class='project' id='miniplay'>
-        <a href='#lightbox-miniplay'>
-            <img class='project-img' src='/assets/miniplay.jpg'>
-            <span class='project-title'>MiniPlay</span>
-        </a>
-        <div class='lightbox' id='lightbox-miniplay'>
-          <a class='lightbox__close' href='#noscroll'>
-            <i class='fa fa-close'></i>
-            <div class='lightbox__background'></div>
-          </a>
-          <div class='lightbox__content'>
-            <div class='lightbox__img' style='background-image: url("/assets/miniplay.jpg")'>
-              <img src='/assets/miniplay.jpg'>
-            </div>
-            <div class='lightbox__description'>
-              <p><strong>MiniPlay</strong> is a Chrome extension that adds a miniplayer popup and global keyboard shortcuts to popular streaming music players like Spotify and Google Play Music. It also provides Last.fm scrobbling and rich notifications.</p>
-              <p><a class='alignleft' href='https://chrome.google.com/webstore/detail/miniplay/dfddfiedihbijfeacjamchlliogmjjnd' target='_blank'>Download</a> <a href='https://github.com/jchen1/MiniPlay' target='_blank'><i class='fa fa-github'></i></a>
-              </p>
-            </div>
-          </div>
-        </div>
+    {% assign sorted_pages = (site.pages | sort: 'index') %}
+    {% for page in sorted_pages %}
+        {% if page.layout == 'project' %}
+            <section class='project' id='{{page.id}}'>
+                <a href='#lightbox-{{page.id}}'>
+                    <div class='project__img' style='background-image: url("{{page.thumb}}")'></div>
+                </a>
+                <span class='project__title'>{{page.title}}</span>
 
-    </section>
-    <section class='project'>
-        <a href='#lightbox-clahe'>
-            <img class='project-img' src='/assets/clahe.jpg'>
-            <span class='project-title'>Mobile Night Vision</span>
-        </a>
-        <div class='lightbox' id='lightbox-clahe'>
-            <a class='lightbox__close' href='#noscroll'>
-              <i class='fa fa-close'></i>
-              <div class='lightbox__background'></div>
-            </a>
-            <div class='lightbox__content'>
-                <div class='lightbox__img' style='background-image: url("/assets/clahe.jpg")'>
-                    <img src='/assets/clahe.jpg'>
+                <div class='lightbox' id='lightbox-{{page.id}}'>
+                  <a class='lightbox__close' href='#noscroll'>
+                    <i class='fa fa-close'></i>
+                    <div class='lightbox__background'></div>
+                  </a>
+                  <div class='lightbox__content'>
+                    <div class='lightbox__img' style='background-image: url("{{page.image}}")'>
+                      <img src='{{page.image}}'>
+                    </div>
+                    <div class='lightbox__description'>
+                      {{page.content}}
+                    </div>
+                  </div>
                 </div>
-                <div class='lightbox__description'>
-                    <p>An iPhone app implementing <a href='https://en.wikipedia.org/wiki/Adaptive_histogram_equalization' target='_blank'>contrast limited adaptive histogram equalization (CLAHE)</a> to improve contrast in low-light videos. Depends on <a href='http://opencv.org/' target='_blank'>OpenCV</a>, but only for the <code>cv::Mat</code> structure. Runs at 10ms per frame on 720p video on an iPhone 6S, so it is suitable for augmented reality applications.</p>
-                    <p><a href='https://github.com/jchen1/CLAHE-iOS' target='_blank'>View on GitHub</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class='project'>
-        <a href='#lightbox-espresso'>
-            <img class='project-img' src='/assets/espresso.png'>
-            <span class='project-title'>Espresso</span>
-        </a>
-        <div class='lightbox' id='lightbox-espresso'>
-            <a class='lightbox__close' href='#noscroll'>
-              <i class='fa fa-close'></i>
-              <div class='lightbox__background'></div>
-            </a>
-            <div class='lightbox__content'>
-                <div class='lightbox__img' style='background-image: url("/assets/espresso.png")'>
-                    <img src='/assets/espresso.png'>
-                </div>
-                <div class='lightbox__description'>
-                    <p><strong>Espresso</strong> is a partial implementation of a deep learning framework in the <a href='http://halide-lang.org' target='_blank'>Halide</a> image proessing language compatible with <a href='http://caffe.berkeleyvision.org' target='_blank'>Caffe</a> configuration files.</p>
-                    <p>
-                    <a href='https://jczhang.github.io/espresso' target='_blank'>Visit website</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class='project'>
-        <a href='#lightbox-threadpool'>
-            <img class='project-img' src='/assets/threadpool.png'>
-            <span class='project-title'>threadpool</span>
-        </a>
-        <div class='lightbox' id='lightbox-threadpool'>
-            <a class='lightbox__close' href='#noscroll'>
-              <i class='fa fa-close'></i>
-              <div class='lightbox__background'></div>
-            </a>
-            <div class='lightbox__content'>
-                <div class='lightbox__img' style='background-image: url("/assets/threadpool.png")'>
-                    <img src='/assets/threadpool.png'>
-                </div>
-                <div class='lightbox__description'>
-                    <p>A lightweight header-only threadpool library for C++11. Offers more control than <code>std::async</code> while remaining simpler than manual thread management. <code>threadpool</code> can automatically allocate and deallocate threads as necessary, handles any callable object (including lambdas and function objects), and supports <code>std::future</code>.
-                    </p>
-                    <p><a href='https://github.com/jchen1/threadpool' target='_blank'>View on GitHub</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
+
+            </section>
+        {% endif %}
+    {% endfor %}
 </div>

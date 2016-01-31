@@ -1,29 +1,31 @@
 <h1>Projects</h1>
 
-<div class='project'>
-    <h2><a href='https://chrome.google.com/webstore/detail/miniplay/dfddfiedihbijfeacjamchlliogmjjnd' target='_blank'>MiniPlay</a> &nbsp; <a href='https://github.com/jchen1/MiniPlay' target='_blank'><i class='fa fa-github alignright'></i></a></h2>
+<div class='projects-container'>
+    {% assign sorted_pages = (site.pages | sort: 'index') %}
+    {% for page in sorted_pages %}
+        {% if page.layout == 'project' %}
+            <section class='project' id='{{page.id}}'>
+                <a href='#lightbox-{{page.id}}'>
+                    <div class='project__img' style='background-image: url("{{page.thumb}}")'></div>
+                </a>
+                <span class='project__title'>{{page.title}}</span>
 
-    <a href='https://chrome.google.com/webstore/detail/miniplay/dfddfiedihbijfeacjamchlliogmjjnd' target='_blank'><img class='project-img' src='assets/miniplay.jpg'></a>
-    <p><strong>MiniPlay</strong> is a Chrome extension that adds a miniplayer popup and global keyboard shortcuts to popular streaming music players like Spotify and Google Play Music. It also provides Last.fm scrobbling and rich notifications.</p>
-</div>
+                <div class='lightbox' id='lightbox-{{page.id}}'>
+                  <a class='lightbox__close' href='#noscroll'>
+                    <i class='fa fa-close'></i>
+                    <div class='lightbox__background'></div>
+                  </a>
+                  <div class='lightbox__content'>
+                    <div class='lightbox__img' style='background-image: url("{{page.image}}")'>
+                      <img src='{{page.image}}'>
+                    </div>
+                    <div class='lightbox__description'>
+                      {{page.content}}
+                    </div>
+                  </div>
+                </div>
 
-<div class='project'>
-    <a href='https://github.com/jchen1/CLAHE-iOS' target='_blank'><h2>Mobile Night Vision</h2></a>
-
-    <a href='https://github.com/jchen1/CLAHE-iOS' target='_blank'><img class='project-img' src='assets/clahe.jpg'></a>
-    <p>An iPhone app implementing <a href='https://en.wikipedia.org/wiki/Adaptive_histogram_equalization' target='_blank'>contrast limited adaptive histogram equalization (CLAHE)</a> to improve contrast in low-light videos. Depends on <a href='http://opencv.org/' target='_blank'>OpenCV</a>, but only for the <code>cv::Mat</code> structure. Runs at 10ms per frame on 720p video on an iPhone 6S, so it is suitable for augmented reality applications.
-    </p>
-</div>
-<div class='project'>
-    <a href='https://jczhang.github.io/espresso' target='_blank'><h2>espresso</h2></a>
-
-    <a href='https://jczhang.github.io/espresso' target='_blank'><img class='project-img' src='assets/espresso.png'></a>
-    <p><strong>Espresso</strong> is a partial implementation of a deep learning framework in the <a href='http://halide-lang.org' target='_blank'>Halide</a> image proessing language compatible with <a href='http://caffe.berkeleyvision.org' target='_blank'>Caffe</a> configuration files.</p>
-</div>
-<div class='project'>
-    <a href='https://github.com/jchen1/threadpool' target='_blank'><h2>threadpool</h2></a>
-
-    <a href='https://github.com/jchen1/threadpool' target='_blank'><img class='project-img' src='assets/threadpool.png'></a>
-    <p>A lightweight header-only threadpool library for C++11. Offers more control than <code>std::async</code> while remaining simpler than manual thread management.
-    </p>
+            </section>
+        {% endif %}
+    {% endfor %}
 </div>

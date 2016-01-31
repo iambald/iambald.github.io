@@ -28,3 +28,5 @@ github:
   repo:           https://github.com/jchen1/jchen1.github.io
 
 categories: [project, main]
+
+include: ['_pages']

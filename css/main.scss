@@ -195,44 +195,74 @@ main {
 .projects-container {
     width: 100%;
 
-    .project {
-        width: 100%;
-    }
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+}
 
-    .project-img {
-        width: 100%;
-    }
+.project {
+    width: 100%;
+    padding: 1em 0;
 
     @media (min-width: $break-md) {
-        .project {
-            background-color: #f9f9f9;
-            margin: 0 2% 3em 0em;
+        width: 45%;
+    }
 
-            border-radius: 2px;
-            box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+    .project__img {
+        width: 100%;
+        height: 25em;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 8px;
+        position: relative;
 
-            width: 48%;
-            display: inline-block;
-        }
-
-        .project:nth-child(2n) {
-            margin-right: 0;
+        @media (min-width: $break-md) {
+            height: 12em;
         }
     }
 
-    @media (min-width: $break-lg) {
-        .project {
-            margin: 0 2% 3em 0;
-            width: 31%;
-        }
+    .project__img:hover:before {
+        opacity: 0.6;
+    }
 
-        .project:nth-child(2n) {
-            margin-right: 2%;
-        }
+    .project__img:before {
+        border-radius: 8px;
 
-        .project:nth-child(3n) {
-            margin-right: 0;
-        }
+        transition: opacity 0.2s ease-in-out;
+        background: black;
+        content: '';
+        display: block;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+    }
+
+    .project__img:hover:after {
+        opacity: 1;
+    }
+
+    .project__img:after {
+        content: 'View';
+        transition: opacity 0.2s ease-in-out;
+        border-radius: 8px;
+        border: 3px solid rgba(255, 255, 255, 0.5);
+        color: white;
+        display: block;
+        opacity: 0;
+        line-height: 2.25em;
+        padding: 0 1.5em;
+        margin: -1.25em 0 0 -3em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+    }
+
+    .project__title {
+        line-height: 2.5;
     }
 }
 
