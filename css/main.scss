@@ -1,15 +1,8 @@
 ---
 ---
 
-$break-sm: 48em;
-$break-md: 56em;
-$break-lg: 75em;
-
-$sidebar-width: 30%;
-
-$header-color: #046380;
-// $link-color: #b9121b;
-$link-color: #f21823;
+@import 'variables';
+@import 'lightbox';
 
 // Reset margins and padding to do it manually
 * {
@@ -241,107 +234,6 @@ main {
             margin-right: 0;
         }
     }
-}
-
-.lightbox {
-    display: none;
-
-    .lightbox-background {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.8);
-        z-index: 1;
-    }
-
-    .lightbox-close {
-        color: rgba(255, 255, 255, 0.9);
-        position: fixed;
-        top: 2%;
-        right: 2%;
-        z-index: 3;
-    }
-
-    .lightbox-img {
-        display: inline-block;
-        width: 100%;
-
-        @media (min-width: $break-md) {
-            width: 70%;
-        }
-    }
-
-    * {
-        z-index: 2;
-    }
-
-
-    .lightbox-content {
-      top: 0;
-      left: 0;
-      overflow: scroll;
-      height: 100%;
-      width: 100%;
-      position: fixed;
-      text-align: center;
-      border-radius: 2px;
-      background-color: black;
-
-      @media(min-width: $break-md) {
-        height: auto;
-        width: auto;
-        max-height: 90vh;
-        max-width: 90vw;
-        top: 7%;
-        left: 5%;
-      }
-    }
-
-
-    img {
-        padding: 5vh 2em 0 2em;
-        // padding-top: 5vh;
-        max-height: 90vh;
-        max-width: 100%;
-        vertical-align: middle;
-
-        @media(min-width: $break-md) {
-            padding: 0;
-        }
-    }
-
-    .project-description {
-        width: 100%;
-        padding: 1em 2em;
-        line-height: 1.3;
-        vertical-align: bottom;
-        text-align: left;
-        display: inline-block;
-
-        @media (min-width: $break-md) {
-            width: 30%;
-            height: 100%;
-            min-height: 100%;
-            padding: 1em 2em;
-        }
-    }
-
-    a {
-        color: lighten($header-color, 20%);
-    }
-
-    p {
-        color: white;
-    }
-
-}
-
-.lightbox:target {
-    outline: none;
-    display: block;
-    opacity: 1;
 }
 
 

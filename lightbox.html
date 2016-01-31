@@ -1,0 +1,36 @@
+---
+title: Home
+layout: null
+---
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  {% include head.html %}
+
+  <body>
+
+    <section class='project'>
+      <a href='#lightbox'>
+        <img class='project-img' src='/assets/clahe.jpg' style='width:100px;'>
+      </a>
+      <div class='lightbox' id='lightbox'>
+        <a class='lightbox__close' href='#noscroll'>
+          <i class='fa fa-close'></i>
+          <div class='lightbox__background'></div>
+        </a>
+        <div class='lightbox__content'>
+          <div class='lightbox__img' style='background-image: url("/assets/clahe.jpg")'>
+            <img src='/assets/clahe.jpg'>
+          </div>
+          <div class='lightbox__description'>
+            <p><strong>MiniPlay</strong> is a Chrome extension that adds a miniplayer popup and global keyboard shortcuts to popular streaming music players like Spotify and Google Play Music. It also provides Last.fm scrobbling and rich notifications.</p>
+            <p><a class='alignleft' href='https://chrome.google.com/webstore/detail/miniplay/dfddfiedihbijfeacjamchlliogmjjnd' target='_blank'>Download</a> <a href='https://github.com/jchen1/MiniPlay' target='_blank'><i class='fa fa-github alignright'></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>
