@@ -1,3 +1,4 @@
+@import "bourbon/bourbon";
 @import "variables";
 
 .lightbox {
@@ -21,7 +22,7 @@
     justify-content: center;
     align-items: flex-start;
 
-    transition: visibility 0s 0.5s, opacity 0.5s;
+    @include transition(visibility 0s 0.5s, opacity 0.5s);
 
     @media (min-width: $break-md) {
         align-items: center;
@@ -32,7 +33,7 @@
     visibility: visible;
     opacity: 1;
 
-    transition: opacity 0.5s, visibility 0.5s;
+    @include transition(opacity 0.5s, visibility 0.5s);
 }
 
 .lightbox__content {
@@ -115,7 +116,7 @@
         font-size: 14px;
         width: 1.14285714285em;     // 1/7
         height: 1.14285714285em;
-        transition: all 0.3s;
+        @include transition(all 0.3s);
         background-color: black;
         border: 2px solid white;
         border-radius: 100%;
@@ -127,7 +128,7 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        @include transform(translate(-50%, -50%));
     }
 
     > i:hover {
