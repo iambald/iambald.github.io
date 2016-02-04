@@ -1,6 +1,7 @@
 ---
 ---
 
+@import 'bourbon/bourbon';
 @import 'variables';
 @import 'lightbox';
 
@@ -45,9 +46,9 @@ strong {
 }
 
 a {
-    transition: color 0.2s ease,
+    @include transition(color 0.2s ease,
                 border-color 0.2s ease-in-out,
-                background-color 0.2s ease;
+                background-color 0.2s ease);
     color: $header-color;
 }
 
@@ -232,7 +233,7 @@ main {
     .project__img:before {
         border-radius: 8px;
 
-        transition: opacity 0.2s ease-in-out;
+        @include transition(opacity 0.2s ease-in-out);
         background: black;
         content: '';
         display: block;
@@ -247,7 +248,7 @@ main {
 
     .project__img:after {
         content: 'View';
-        transition: opacity 0.2s ease-in-out;
+        @include transition(opacity 0.2s ease-in-out);
         border-radius: 8px;
         border: 3px solid rgba(255, 255, 255, 0.5);
         color: white;
