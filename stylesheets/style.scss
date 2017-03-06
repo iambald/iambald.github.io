@@ -1,7 +1,7 @@
 ---
 ---
 
-@import "bourbon";
+// @import "bourbon";
 
 $background: #f9f9f9;
 
@@ -68,8 +68,11 @@ footer {
 }
 
 #container {
-  @include clearfix;
-  @include box-sizing(border-box);
+  #container::after {
+    clear: both;
+    content: "";
+    display: table; }
+  box-sizing: border-box;
   width: 100%;
   max-width: 600px;
   background: #fff;
@@ -85,7 +88,7 @@ footer {
     padding: 30px 40px 24px;
     text-align: center;
     a.main {
-      @include inline-block;
+      display: inline-block;
       padding: 2px 2px;
       margin-right: 12px;
       margin-bottom: 6px;
@@ -96,7 +99,7 @@ footer {
       }
     }
     .button {
-      @include inline-block;
+      display: inline-block;
       height: 20px;
       overflow: hidden;
     }
@@ -114,7 +117,7 @@ footer {
 
 
 .content {
-  @include box-sizing(border-box);
+  box-sizing: border-box;;
   position: relative;
   width: 100%;
   border-width: 0;
@@ -127,8 +130,8 @@ a, .as-link {
   text-decoration: none;
   color: #269;
   line-height: 1.4em;
-  @include inline-block;
-  @include transition(color 0.3s);
+  display: inline-block;
+  transition: color 0.3s;
   &.current, &:hover {
     background-image: url(/images/line.png);
     background-repeat: repeat-x;
@@ -143,7 +146,7 @@ a, .as-link {
   &.big-button {
     min-width: 30%;
     border-radius: 3px;
-    @include transition(all, 0.2s);
+    transition: all, 0.2s;
     color: #fff;
     cursor: pointer;
     font-size: 12px;
@@ -198,10 +201,9 @@ ul.posts, ul.projects {
   &, li { margin: 0; padding: 0; list-style: none; }
   li { margin-bottom: 20px; }
   .datetime {
-    @include inline-block;
+    display: inline-block;
     width: 130px;
     text-transform: uppercase;
-    float: right;
     color: #999;
     font-size: 10px;
     text-align: right;
@@ -224,11 +226,6 @@ section.post {
       color: #d0d0d0; font-size: 10px;
     }
   }
-  iframe { width: 100%; }
-  iframe, img {
-    padding: 0;
-    @include border-bottom-radius(3px); @include border-top-radius(3px);
-  }
 }
 
 section.post, section > p {
@@ -236,7 +233,7 @@ section.post, section > p {
   * { max-width: 100%; }
   em strong { background-color: #ffffee; padding: 0 2px; }
   blockquote {
-    @include transition(all, 0.3s);
+    transition: all, 0.3s;
     color: #606060;
     background: #f9f9f9;
     position: relative;
@@ -269,10 +266,10 @@ pre {
   padding: 10px 0;
   width: 100%;
   line-height: 1.2em;
-  @include box-sizing(border-box);
+  box-sizing: border-box;;
 
 }
-code { font-size: 13px; color: #eee; background: #39382e; padding: 2px 4px 3px; border-radius: 2px; line-height: 1.3em; @include inline-block; }
+code { font-size: 13px; color: #eee; background: #39382e; padding: 2px 4px 3px; border-radius: 2px; line-height: 1.3em; display: inline-block; }
 img {
   max-width: 100%;
   &.half { width: 50%; }
