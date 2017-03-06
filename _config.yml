@@ -18,11 +18,8 @@ links:
     url:          /projects/
   - name:         Résumé
     url:          /resume/
-highlighter:      pygments
+highlighter:      rouge
 permalink:        pretty
-markdown:         redcarpet
-redcarpet:
-  extensions:
-    - smart
+markdown:         kramdown
 
 gems: [bourbon, neat]
