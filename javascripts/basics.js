@@ -11,14 +11,25 @@ jQuery(function() {
       popover.toggleClass('hidden');
 
       if (popover.hasClass('hidden')) {
-        $(element).css('margin-bottom', 0);
+        $(element).parent().css('margin-bottom', '20px');
+        $(element).find('.project-hover').removeClass('active');
       } else {
-        $(element).css('margin-bottom', popover.height() + 2 * parseInt(popover.css('margin-top')));
+        $(element).parent().css('margin-bottom', 20 + popover.height() + 2 * parseInt(popover.css('margin-top')));
+        $(element).find('.project-hover').addClass('active');
+
       }
     });
 
-    $(element).hover(function() {
-      $(element).find('.project-hover').toggleClass('active');
-    })
+    $(element).mouseenter(function() {
+      if ($(element).find('.project-description').hasClass('hidden')) {
+        $(element).find('.project-hover').addClass('active');
+      }
+    });
+
+    $(element).mouseleave(function() {
+      if ($(element).find('.project-description').hasClass('hidden')) {
+        $(element).find('.project-hover').removeClass('active');
+      }
+    });
   });
 });
