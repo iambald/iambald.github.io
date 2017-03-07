@@ -1,0 +1,52 @@
+==================================================================
+https://keybase.io/jeffchen
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://jeff.yt
+  * I am jeffchen (https://keybase.io/jeffchen) on keybase.
+  * I have a public key ASD89DYn0Jj5rDj_m5kOLC9XuITMAyHgiHbHPURMhI-oGwo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0120fcf43627d098f9ac38ff9b990e2c2f57b884cc0321e08876c73d444c848fa81b0a",
+            "host": "keybase.io",
+            "kid": "0120fcf43627d098f9ac38ff9b990e2c2f57b884cc0321e08876c73d444c848fa81b0a",
+            "uid": "c4dd1924b9084375324c965a7ab54e19",
+            "username": "jeffchen"
+        },
+        "service": {
+            "hostname": "jeff.yt",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.17"
+    },
+    "ctime": 1474066376,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1474066288,
+        "hash": "a99bedebfc20272ba9821240d3e23bd2d2d478b6bf51b2af35106ba1cb1e349bf634a27956f8c76ad54d8fa51f99a38fa7399c0a924f39470a51a09c051c51b7",
+        "seqno": 640210
+    },
+    "prev": "bcc40f0dfbd4d8b6227f75bc03e491c7e1e497281e44c9e9833ac558cdc0b5b6",
+    "seqno": 8,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg/PQ2J9CY+aw4/5uZDiwvV7iEzAMh4Ih2xz1ETISPqBsKp3BheWxvYWTFAu57ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwZmNmNDM2MjdkMDk4ZjlhYzM4ZmY5Yjk5MGUyYzJmNTdiODg0Y2MwMzIxZTA4ODc2YzczZDQ0NGM4NDhmYTgxYjBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwZmNmNDM2MjdkMDk4ZjlhYzM4ZmY5Yjk5MGUyYzJmNTdiODg0Y2MwMzIxZTA4ODc2YzczZDQ0NGM4NDhmYTgxYjBhIiwidWlkIjoiYzRkZDE5MjRiOTA4NDM3NTMyNGM5NjVhN2FiNTRlMTkiLCJ1c2VybmFtZSI6ImplZmZjaGVuIn0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJqZWZmLnl0IiwicHJvdG9jb2wiOiJodHRwOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4xNyJ9LCJjdGltZSI6MTQ3NDA2NjM3NiwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNDc0MDY2Mjg4LCJoYXNoIjoiYTk5YmVkZWJmYzIwMjcyYmE5ODIxMjQwZDNlMjNiZDJkMmQ0NzhiNmJmNTFiMmFmMzUxMDZiYTFjYjFlMzQ5YmY2MzRhMjc5NTZmOGM3NmFkNTRkOGZhNTFmOTlhMzhmYTczOTljMGE5MjRmMzk0NzBhNTFhMDljMDUxYzUxYjciLCJzZXFubyI6NjQwMjEwfSwicHJldiI6ImJjYzQwZjBkZmJkNGQ4YjYyMjdmNzViYzAzZTQ5MWM3ZTFlNDk3MjgxZTQ0YzllOTgzM2FjNTU4Y2RjMGI1YjYiLCJzZXFubyI6OCwidGFnIjoic2lnbmF0dXJlIn2jc2lnxEB+1jBRG8dL3WcS62h7+Pf6cjNE3S//gzVY8fB5OCr8nECzikYttydrvxHrM2PlBSn5ZFDYHg52/dg1vGgm+iQGqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQg3x0HrS0OwC2DhpSemm7vUbRD8PfSMC042oNe3vtiI96jdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jeffchen
