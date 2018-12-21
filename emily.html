@@ -3,7 +3,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 <body>
-  <div style="margin:0;padding:0;background-color:#f7f7f7">
+  <div id="1" style="display:none;margin:0;padding:0;background-color:#f7f7f7">
     <table cellpadding="0" cellspacing="0" border="0" style="width:100%;background-color:#f7f7f7">
       <tbody>
         <tr>
@@ -101,13 +101,24 @@
                                   </tr>
                                 </tbody>
                               </table>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </blockquote>
-                  </div>
-                  <br>
-                </body>
-                </html>
+                            </td>
+                          </tr>
+                        </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div id="2" style="display:block;">
+    <h1>Nope</h1>
+  </div>
+  <script type="text/javascript">
+    const date = new Date();
+    if (date.getDate() > 21 && (date.getMonth() >= 11 || date.getFullYear() > 2018)) {
+      document.getElementById("1").style.display = "block";
+      document.getElementById("2").style.display = "none";
+    }
+  </script>
+</body>
+</html>
