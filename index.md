@@ -3,7 +3,7 @@ layout: page
 title: Home
 ---
 
-Hey, I'm Jeff! I was born and raised in the Bay Area, and I'm living in San Francisco right now. I studied **computer science** with a minor in human-computer interaction at [Carnegie Mellon University](http://cmu.edu/), and graduated in May 2016. I currently work at [Ladder Life](https://ladderlife.com/) as a full-stack software engineer.
+Hey, I'm Jeff! I was born and raised in the Bay Area, and I'm living in San Francisco right now. I studied **computer science** with a minor in human-computer interaction at [Carnegie Mellon University](https://cmu.edu/), and graduated in May 2016. I currently work at [Ladder Life](https://ladderlife.com/) as a full-stack software engineer.
 
 Since everyone asks eventually, I have [alopecia areata universalis](https://en.wikipedia.org/wiki/Alopecia_universalis), so I'm (almost) completely hairless. Yes, even there.
 
