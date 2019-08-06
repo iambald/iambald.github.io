@@ -16,6 +16,8 @@ links:
     url:          /
   - name:         Projects
     url:          /projects/
+  - name:         Blog
+    url:          /blog
   - name:         Résumé
     url:          /resume/
 highlighter:      rouge
