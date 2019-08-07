@@ -7,7 +7,7 @@ title: Projects
 <section class="project" markdown="1">
 
 ## [{{ project.title }}]({{ project.homepage }})
-![{{ project.title }} image]({{ site.baseurl }}/images/{{ project.image }}){: .project-image}
+![{{ project.title }} image]({{ site.baseurl }}/images/{{ project.image }})
 
 {{ project.description }}
 
