@@ -1,36 +1,29 @@
-- title: MINIPLAY
+- title: MiniPlay
   image: miniplay.png
-  github: jchen1/miniplay
   homepage: https://chrome.google.com/webstore/detail/miniplay/dfddfiedihbijfeacjamchlliogmjjnd
   description: >
     **MiniPlay** is a Chrome extension that adds a miniplayer popup and global keyboard shortcuts to popular streaming music players like Spotify and Google Play Music. It also provides Last.fm scrobbling, rich notifications, and more.
-  date: 2014-02-01
 
-- title: µCAL
+- title: µCal
   image: uCal.png
-  github: jchen1/uCal
+  homepage: https://www.github.com/jchen1/uCal
   description: >
     **µCal** is a tiny replacement for the macOS menubar clock. Includes a monthly calendar view, an icon containing the day of the month, and upcoming calendar events.
-  date: 2016-11-01
 
-- title: ESPRESSO
+- title: Espresso
   image: espresso.png
-  github: caretcaret/espresso
-  homepage: http://caretcaret.github.io/espresso/
+  homepage: https://caretcaret.github.io/espresso/
   description: >
     **Espresso** is a simple deep learning framework written the [Halide](http://halide-lang.org/) image proessing language compatible with [Caffe](http://caffe.berkeleyvision.org/) configuration files.
-  date: 2015-05-01
 
 - title: CLAHE
   image: clahe.jpg
-  github: jchen1/CLAHE-iOS
+  homepage: https://www.github.com/jchen1/CLAHE-iOS
   description: >
     An iPhone app implementing [contrast limited adaptive histogram equalization (CLAHE)](https://en.wikipedia.org/wiki/Adaptive_histogram_equalization) to improve contrast in low-light videos. Speedy enough (100+fps for 720p video) to incorporate into a real-time computer vision pipeline.
-  date: 2016-05-01
 
-- title: THREADPOOL
+- title: threadpool
   image: threadpool.png
-  github: jchen1/threadpool
+  homepage: https://www.github.com/jchen1/threadpool
   description: >
     A lightweight header-only **threadpool** library for C++11 that offers more control than `std::async` while remaining simpler than manual thread management. threadpool automatically allocates and deallocates threads as necessary, handles any callable object (including lambdas and function objects), and can return futures from callables.
-  date: 2013-08-01
