@@ -2,7 +2,7 @@
 layout: post
 title: ETL from Datomic to BigQuery
 author: Jeff Chen
-tags: datomic,bigquery,etl,streaming
+tags: datomic,bigquery,etl,streaming,clojure
 ---
 
 This post is cross-posted from [Ladder's engineering blog](https://ladderlife.github.io/blog/2019/08/etl-datomic-bigquery/). Shout out Ladder for forcing me to write something!
