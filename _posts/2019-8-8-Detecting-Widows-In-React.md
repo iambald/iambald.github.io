@@ -7,13 +7,13 @@ tags: resume,react,widow,typography,javascript,js
 
 ![widows]({{ site.baseurl }}/images/widows.png)
 
-I've been working with fixed-width containers in React recently -- one problem that I've had is dealing with [widows](https://www.fonts.com/content/learning/fontology/level-2/text-typography/rags-widows-orphans) in paragraph text. (`widow` is apparently an overloaded term in typesetting -- here, I mean a single word that overflows into a new line, not a single line overflowing into a new page.) To help me notice widows as I make content and modify styles, I wrote a simple React container to apply a CSS class to widowed elements.
+I've been working with fixed-width containers in React recently, so I've been able to focus on typesetting. One problem I've had is noticing [widows](https://www.fonts.com/content/learning/fontology/level-2/text-typography/rags-widows-orphans) in paragraph text as I change copy and styling. (`widow` is apparently an overloaded term in typesetting -- here, I mean a single word that overflows into a new line, not a single line overflowing into a new page.) I ended up building a React component that automates widow detection - let's dig in!
 
 <!--more-->
 
 ## Getting a container reference in React
 
-First, we'll build an component that wraps its child in a container. We'll use a reference to this container to see if the child element has a widow. Our component will report widows with the `data-has-widow` attribute.
+First, we'll build a component that wraps its child in a container. We'll use a reference to this container to see if the child element has a widow. Our component will report widows with the `data-has-widow` attribute.
 
 ```jsx
 import React from 'react';
@@ -90,10 +90,10 @@ render() {
 }
 ```
 
-Now, we can calculate if a container has a widow - we'll consider a container widowed if the width of its last line is less than 10% of the total container width. We can figure that out with some clever arithmetic:
+We need this hidden container to get the unconstrained width of the child. With it, we can calculate if a container has a widow. We consider a container widowed if the width of its last line is less than 10% of the total container width. We can figure that out with some clever arithmetic:
 
 ```jsx
-const DEFAULT_ORPHAN_THRESHOLD = 0.1;
+const DEFAULT_WIDOW_THRESHOLD = 0.1;
 
 hasWidows() {
   const containerWidth = this.container.clientWidth;
@@ -103,11 +103,11 @@ hasWidows() {
   const trailingLineWidth =
     hiddenContainerWidth - (containerWidth * (containerLines - 1));
 
-  const orphanThreshold =
-    DEFAULT_ORPHAN_THRESHOLD * containerWidth;
+  const widowThreshold =
+    DEFAULT_WIDOW_THRESHOLD * containerWidth;
 
   return hiddenContainerWidth > containerWidth &&
-         trailingLineWidth - containerWidth < orphanThreshold;
+         trailingLineWidth - containerWidth < widowThreshold;
 }
 ```
 
@@ -117,7 +117,7 @@ And that's it! Putting it all together:
 ```jsx
 import React from 'react';
 
-const DEFAULT_ORPHAN_THRESHOLD = 0.1;
+const DEFAULT_WIDOW_THRESHOLD = 0.1;
 
 class ComponentReportingWidows extends React.PureComponent {
   constructor(props) {
@@ -143,11 +143,11 @@ class ComponentReportingWidows extends React.PureComponent {
     const trailingLineWidth =
       hiddenContainerWidth - (containerWidth * (containerLines - 1));
 
-    const orphanThreshold =
-      DEFAULT_ORPHAN_THRESHOLD * containerWidth;
+    const widowThreshold =
+      DEFAULT_WIDOW_THRESHOLD * containerWidth;
 
     return hiddenContainerWidth > containerWidth &&
-          trailingLineWidth - containerWidth < orphanThreshold;
+          trailingLineWidth - containerWidth < widowThreshold;
   }
 
   componentDidMount() {
