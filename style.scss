@@ -290,6 +290,33 @@ nav {
   }
 }
 
+.pagination {
+  text-align: center;
+  font-size: 18px;
+
+  margin-bottom: 50px;
+
+  @include mobile {
+    font-size: 16px;
+  }
+
+  a.pagination-item {
+    user-select: none;
+    font-weight: bold;
+    margin: 0 20px;
+    text-decoration: none;
+
+    @include mobile {
+      margin: 0 10px;
+    }
+
+    &.disabled {
+      color: lighten($darkGray, 60%);
+      cursor: default;
+    }
+  }
+}
+
 .wrapper-footer {
   margin-top: 50px;
 }

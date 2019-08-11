@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Detecting widows in React
+title: Résumé generator for JSON Resume
 author: Jeff Chen
 tags: resume,json,cv,react
 ---
